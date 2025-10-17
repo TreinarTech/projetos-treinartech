@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Player de Música — Grid + Barra Inferior</title>
+<link rel="stylesheet" href="assets/css/theme.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="heading">Músicas</div>
+    <div id="grid" class="grid" aria-live="polite"></div>
+  </div>
+
+  <!-- Barra inferior -->
+  <div class="playerbar" role="region" aria-label="Controles do player">
+    <div class="capsule">
+      <button class="btn small" id="prevBtn" aria-label="Anterior" title="Anterior">
+        <span class="icon prev" aria-hidden="true"></span>
+      </button>
+
+      <button class="btn" id="playBtn" aria-label="Reproduzir" title="Reproduzir/Pausar">
+        <span class="icon play" id="playIcon" aria-hidden="true"></span>
+      </button>
+
+      <button class="btn small" id="nextBtn" aria-label="Próxima" title="Próxima">
+        <span class="icon next" aria-hidden="true"></span>
+      </button>
+
+      <div class="nowplaying" id="nowPlaying">Nenhuma faixa selecionada</div>
+
+      <div class="progress" id="progress" aria-label="Linha do tempo" role="slider" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="bar" id="progressBar"></div>
+        <span class="sr-only" id="progressSr">0%</span>
+      </div>
+
+      <div class="time" id="time">0:00</div>
+    </div>
+  </div>
+
+<script src="assets/js/scripts.js"></script>
+</body>
+</html>
